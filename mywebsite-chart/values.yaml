@@ -1,0 +1,11 @@
+# These are the "knobs" you can change without editing the templates.
+replicaCount: 2
+
+image:
+  repository: my-website
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  port: 8081        # the port on your PC (localhost:8081)
+  targetPort: 80    # the port inside the container (nginx)
